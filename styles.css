@@ -11,24 +11,26 @@ body {
 }
 
 .header-container {
-background-color: #4D5BF2;	
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-padding: 5px;
-align-items: center;
-
+	background-color: #4D5BF2;	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 5px;
+	align-items: center;
+  
 }
 
 .header-logo {
+	
 	padding-left: 11px;
+	
+
 }
 
 
 .header-text {
 
 	cursor: default;
-	font-size: 2em;
 	margin-right: 200px;
 	color: white;
 	text-shadow:  0 0 0 #fff, 
