@@ -7,14 +7,12 @@
 
 body {
 	display: block;
-	background-color: white;
+	background-color: #F3E25B;
 	font-family: 'Oxygen', sans-serif;
 }
 
-.header-container {
-	background-color: #F3E25B;	
-	display: block;
-	text-align: center;
+.mobile-nav-toggle {
+	display: none;
 }
 
 .header-logo {
@@ -24,7 +22,7 @@ body {
 
 .header-buttons {
 	display: flex;
-	justify-content: center;
+	
 
 
 	
@@ -35,6 +33,8 @@ body {
 	font-size: 1.12rem;
 	border-radius: 10px;
 	padding: 0.4rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
 	
 
 }
@@ -43,6 +43,55 @@ body {
 .header-buttons a {
 	color: black;
 	text-decoration: none;
+}
+
+
+
+
+
+@media (max-width: 40em) {
+
+	body {
+		margin: 1.25rem;
+	}
+
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+
+	}
+	
+	menu.header-buttons {
+		position: fixed;
+		z-index: 1000;
+		inset: 0 0 0 30%;
+		flex-direction: column;
+		justify-content: start;
+		gap: 3em;
+		padding: min(30vh, 10rem) 2rem;
+		background-color: hsl(0, 0%, 0%, 0.3);
+		backdrop-filter: blur(1rem);
+	
+	}
+
+	.mobile-nav-toggle {
+		display: block;
+		position: absolute;
+		z-index: 9999;
+		background: url('images/close.svg') no-repeat center;
+		border: 0;
+		width: 3rem;
+		aspect-ratio: 1;
+		top: 2rem;
+		right: 2rem;
+	}
+		
+
+	
+
+	
+
+
 }
 
 
