@@ -1,4 +1,3 @@
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -11,39 +10,9 @@ body {
 	font-family: 'Oxygen', sans-serif;
 }
 
-.mobile-nav-toggle {
-	display: none;
-}
-
-.header-logo {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-}
-
-.header-buttons {
-	display: flex;
-	
 
 
-	
-}
-.header-buttons li {
-	list-style-type: none;
-	font-weight: 400;
-	font-size: 1.12rem;
-	border-radius: 10px;
-	padding: 0.4rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	
 
-}
-
-
-.header-buttons a {
-	color: black;
-	text-decoration: none;
-}
 
 
 
@@ -51,47 +20,250 @@ body {
 
 @media (max-width: 40em) {
 
-	body {
-		margin: 1.25rem;
+	/*Margins*/
+
+div.header-container {
+	margin: 20px 20px 0 20px;
+}
+div.yellow-page-wrapper {
+	margin: 0 20px;
+}
+
+	/*End margins*/
+
+	div.header-logo {
+		text-align: center;
 	}
 
-	.header-container {
-		display: flex;
-		justify-content: space-between;
 
+	
+	.mobile-wrapper {
+		width: 100%;
+		overflow: hidden;
+		height: 50px;
 	}
 	
 	menu.header-buttons {
-		position: fixed;
-		z-index: 1000;
-		inset: 0 0 0 30%;
-		flex-direction: column;
-		justify-content: start;
-		gap: 3em;
-		padding: min(30vh, 10rem) 2rem;
-		background-color: hsl(0, 0%, 0%, 0.3);
-		backdrop-filter: blur(1rem);
+
+  		overflow: auto;
+  		white-space: nowrap;
+  		padding: 0.4em 0.6em;
+  		font-size: 1.12em;
+  		
+}
 	
+	menu.header-buttons a {
+	color: black;
+	text-decoration: none;
+}
+
+	menu.header-buttons li {
+		list-style-type: none;
+		font-weight: 400;
+		padding: 1em;
+		display: inline-block;
+			
 	}
 
-	.mobile-nav-toggle {
-		display: block;
-		position: absolute;
-		z-index: 9999;
-		background: url('images/close.svg') no-repeat center;
-		border: 0;
-		width: 3rem;
-		aspect-ratio: 1;
-		top: 2rem;
-		right: 2rem;
+	.first-page h1 {
+		font-size: 2.43em;
+		margin-bottom: 10px;
+		margin-top: 30px;
 	}
+
+	.first-page p {
+		font-size: 1.12em;
+	}
+
+	section.start-selling {
+		margin-top: 55px;
+	}
+
+	section.start-selling p {
+		font-size: 0.87em;
+		font-weight: 200;
+		opacity: 0.37;
+		margin-top: 10px;
+	}
+
+	div.form-wrapper {
+		display: flex;
+		flex-direction: column;
+		max-width: 40em;
+		min-height: 390px;
+		background-color: white;
+		border-radius: 19px;
+		padding: 0 14px 14px 14px;
+		margin-top: 10px;
+		box-shadow: 5px 30px 30px rgb(0 0 0 / 0.15);
+
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		overflow: auto;
+
+	}
+
+	label, .button {
+		font-size: 1.1em;
+		letter-spacing: 2px;
+		margin-top: 1em;
+	}
+
+	label {
+		margin-bottom: 3px;
+	}
+
+	.form-input {
+
+		border-radius: 5px;
+		padding: 0.6em 0;
+		font-size: 16px;
+		border: 1px solid black;
+		text-indent: 0.5em;
+	}
+
+	
+
+	.form-input:focus {
+
+		
+		border: 1px solid #F3E25B;
+		outline: none;
+		transition: all 0.3s ease;	
+
+	}
+
+
+	}
+
+
+	 textarea.form-input {
+		min-height: 110px;
+		font-size: 16px;
+		font-family: 'Oxygen', sans-serif;
+		text-indent: 0.5em;
+		
+		
+	}
+
+	::placeholder {
+		opacity: 0.7;
+		
+	}
+
+	.form-button {
+		margin-top: 1em;
+		background-color: black;
+		color: white;
+		padding: 0.6em;
+		font-size: 1.1em;
+		border-radius: 5px;
+		font-weight: 700;
+		border: none;
+		margin-bottom: 4px;
+
 		
 
-	
+	}
+
+	button:hover {
+		transform: translate(0, 4px);
+		transition: 0.2s;
+		cursor: pointer;
+	}
+
+	button:active {
+		transform: scale(0.95);
+
+	}
+
+	div.girl-photo {
+		max-width: 390px;
+		max-height: 520px;
+		margin: auto;
+	}
+
+	div.girl-photo img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	/* Black Font page */
+
+	div.black-wrapper {
+		background-color: black;
+		width: 100%;
+		
+		
+	}
+
+	div.black-wrapper-content {
+		margin: 0 20px;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	div.black-text {
+		color: white;
+		text-align: left;
+	}
+
+	.black-text h1 {
+		font-size: 2.43em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+
+	}
+
+	div.frame-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2.2em;
+
+	}
+
+	div.frame {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		max-width: 390px;
+		max-height: 365px;
+
+
+	}
+
+	div.frame img {
+		width: 90%;
+		height: 90%;
+
+
+	}
+
+	div.frame-text {
+		color: white;
+		margin: 0 auto;
+		text-align: center;
+
+	}
+
+	div.frame-text h1 {
+		margin-top: 10px;
+	}
 
 	
+
+
+
+
+
+
 
 
 }
-
-
+	

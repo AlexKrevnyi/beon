@@ -12,10 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
-
-   <!-- Google icons -->
-
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   
 
 <!-- Open Graph Protocol -->
@@ -33,24 +29,90 @@
     <div class="header-container">
       <div class="header-logo"><img src="images/4 black@8x.png" alt="Logo image" width="120" height="35"></div>
 
-      <button class="mobile-nav-toggle" aria-controls="header-buttons" aria-expanded="false">
-      </button>
-        
-        <menu class="header-buttons" id="header-buttons">
+        <div class="mobile-wrapper">
+        <menu class="header-buttons">
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT US</a></li>
           <li><a href="#">SELL YOUR APPLE</a></li>
           <li><a href="#">CONTACT US</a></li>
-        </menu> 
-
+        </menu>
+        </div>
     </div>
    
   </header>
+
   <main>
+    <div class="yellow-page-wrapper">
+      <section class="first-page">
+        <article>
+          <h1>Best place to sell your Apple device for cash</h1>
+          <p>The simplest and the fastest way to sell your iPhone, MacBook, iPad in Los Angeles</p>
+        </article>  
+      </section>
+
+      <section class="start-selling">
+        <article>
+          <h2>Start selling</h2>
+          <p>You will receive text when your quote is ready</p>
+        </article>
+      </section>
+
+      <div class="form-wrapper">
+      <form class="form">
+        
+          <label for="email">Email or Phone number</label><input type="text" id="email" class="form-input" placeholder="Enter your email or phone number" required>
+          <label for="serial-number">Serial number</label><input type="text" id="serial-number" class="form-input" placeholder="Enter serial number of your device" required>
+          <label for="item-description">Item description</label><textarea id="item-description" class="form-input" placeholder="Enter item description or condition" maxlength="700"></textarea> 
+
+       
 
 
-    
-    
+        <button class="form-button" type="submit">GET A QUOTE</button>
+        
+      </form>
+      </div>
+
+      <div class="girl-photo">
+        <img src="images/2.try.png" alt="Girl Photo">
+      </div>
+
+
+    </div>
+
+    <div class="black-wrapper">
+      
+      <div class="black-wrapper-content">
+            <div class="black-text">
+                <h1>Get cash in 3 simple steps</h1>
+            </div>
+
+          <div class="frame-wrapper">
+                <div class="frame">
+                    <img src="images/frame1.png" alt="Get actual quotaion icon">
+                    <div class="frame-text">
+                      <h1>Get actual quotation</h1>
+                      <h4>get the best price for your Mac</h2>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="images/frame2.png" alt="We test your Mac icon">
+                    <div class="frame-text">
+                      <h1>We test your Mac</h1>
+                      <h4>it takes up to 30 min</h2>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="images/frame3.png" alt="You get paid icon">
+                    <div class="frame-text">
+                      <h1>You get paid</h1>
+                      <h4>instant fast cash</h2>
+                    </div>
+                </div>
+          </div>  
+        
+      </div>
+        
+    </div>
   </main>
 </body>
 </html>
