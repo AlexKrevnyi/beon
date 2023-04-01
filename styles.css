@@ -10,85 +10,80 @@ body {
 	font-family: 'Oxygen', sans-serif;
 }
 
-
-
-
-
-
-
-@media (max-width: 40em) {
-
-	/*Margins*/
-
 div.header-container {
-	margin: 20px 20px 0 20px;
+	margin-right: 70px;
+	margin-left: 70px;
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
-div.yellow-page-wrapper {
-	margin: 0 20px;
+
+menu.header-buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+
 }
 
-	/*End margins*/
-
-	div.header-logo {
-		text-align: center;
-	}
-
-
-	
-	.mobile-wrapper {
-		width: 100%;
-		overflow: hidden;
-		height: 50px;
-	}
-	
-	menu.header-buttons {
-
-  		overflow: auto;
-  		white-space: nowrap;
-  		padding: 0.4em 0.6em;
-  		font-size: 1.12em;
-  		
-}
-	
-	menu.header-buttons a {
+menu.header-buttons a {
 	color: black;
 	text-decoration: none;
+
 }
 
-	menu.header-buttons li {
-		list-style-type: none;
-		font-weight: 400;
-		padding: 1em;
-		display: inline-block;
-			
-	}
 
-	.first-page h1 {
-		font-size: 2.43em;
+menu.header-buttons li {
+	font-size: 1rem;
+	list-style-type: none;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-right: 15px;
+	background-color: white;
+}
+
+section.first-page {
+	max-width: 640px;
+	max-height: 600px;
+	overflow: auto;
+
+
+}
+
+.first-page h1 {
+		font-size: 3.62rem;
 		margin-bottom: 10px;
-		margin-top: 30px;
+		margin-top: 52px;
 	}
 
-	.first-page p {
+.first-page p {
 		font-size: 1.12em;
 	}
 
-	section.start-selling {
-		margin-top: 55px;
-	}
 
-	section.start-selling p {
-		font-size: 0.87em;
+section.start-selling {
+	overflow: auto;
+}
+
+section.start-selling h2 {
+	font-size: 2.25rem;
+}
+
+section.start-selling p {
+		font-size: 0.87rem;
 		font-weight: 200;
 		opacity: 0.37;
-		margin-top: 10px;
+		margin-top: 5px;
 	}
 
-	div.form-wrapper {
+div.form-wrapper {
 		display: flex;
 		flex-direction: column;
-		max-width: 40em;
-		min-height: 390px;
+		max-width: 420px;
+		min-height: 413px;
 		background-color: white;
 		border-radius: 19px;
 		padding: 0 14px 14px 14px;
@@ -123,8 +118,6 @@ div.yellow-page-wrapper {
 		text-indent: 0.5em;
 	}
 
-	
-
 	.form-input:focus {
 
 		
@@ -135,14 +128,13 @@ div.yellow-page-wrapper {
 	}
 
 
-	}
-
 
 	 textarea.form-input {
 		min-height: 110px;
 		font-size: 16px;
 		font-family: 'Oxygen', sans-serif;
 		text-indent: 0.5em;
+		resize: none;
 		
 		
 	}
@@ -163,18 +155,176 @@ div.yellow-page-wrapper {
 		border: none;
 		margin-bottom: 4px;
 
-		
-
 	}
 
 	
-
 	button:active {
 		transform: scale(0.95);
 		transition: 0.2s;
 
 	}
 
+	div.yellow-page-wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		margin-left: 70px;
+		margin-right: 70px;
+		
+	}
+
+	div.pos {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+
+	div.girl-photo {
+		max-width: 640px;
+		max-height: 789px;
+		display: flex;		
+
+	}
+
+	div.girl-photo img {
+		max-width: 100%;
+		max-height: 100%;
+
+	}
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 50em) {
+
+	/*Margins*/
+
+div.header-container {
+	margin: 20px 20px 0 20px;
+	display: block;
+}
+div.yellow-page-wrapper {
+	margin: 0 20px;
+	display: block;
+}
+
+	/*End margins*/
+
+	div.header-logo {
+		text-align: center;
+
+	}
+
+	div.header-logo img {
+		width: 120px;
+		height: 35px;
+	}
+
+
+	
+	.mobile-wrapper {
+		width: 100%;
+		overflow: hidden;
+		height: 50px;
+	}
+	
+	menu.header-buttons {
+
+  		overflow: auto;
+  		white-space: nowrap;
+  		padding: 0.4em 0.6em;
+  		font-size: 1.12em;
+  		display: block;
+  	  		
+}
+
+	menu.header-buttons li {
+		font-weight: 400;
+		padding: 1em;
+		display: inline-block;
+		border: none;
+		margin: 0;
+		background-color: #F3E25B;
+
+			
+	}
+
+	.first-page h1 {
+		font-size: 2.43em;
+		margin-bottom: 10px;
+		margin-top: 30px;
+	}
+
+	section.first-page {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+
+	section.start-selling {
+		margin-top: 55px;
+		margin-left: 0;
+	}
+
+	section.start-selling h2 {
+		font-size: 1.5rem;
+	}
+
+	section.start-selling p {
+		font-size: 0.87em;
+		font-weight: 200;
+		opacity: 0.37;
+		margin-top: 10px;
+	}
+
+	div.form-wrapper {
+		display: flex;
+		flex-direction: column;
+		max-width: 50em;
+		min-height: 390px;
+		background-color: white;
+		border-radius: 19px;
+		padding: 0 14px 14px 14px;
+		margin-top: 10px;
+		margin-left: 0;
+		box-shadow: 5px 30px 30px rgb(0 0 0 / 0.15);
+
+	}
+
+
+	
 	div.girl-photo {
 		max-width: 390px;
 		max-height: 520px;
