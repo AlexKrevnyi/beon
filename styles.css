@@ -11,8 +11,9 @@ body {
 }
 
 div.header-container {
-	margin-right: 70px;
-	margin-left: 70px;
+	max-width: 1440px;
+	margin-right: auto;
+	margin-left: auto;
 	margin-top: 40px;
 	display: flex;
 	flex-wrap: nowrap;
@@ -20,11 +21,16 @@ div.header-container {
 	align-items: center;
 }
 
+div.header-logo {
+	margin-left: 70px;
+}
+
 menu.header-buttons {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-right: 70px;
 
 }
 
@@ -168,28 +174,38 @@ div.form-wrapper {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: nowrap;
-		margin-left: 70px;
-		margin-right: 70px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1440px;
+
 		
 	}
 
 	div.pos {
 		display: flex;
 		flex-direction: column;
+		margin-left: 70px;
+		flex: 1;
 		
+
 	}
 
 
 	div.girl-photo {
 		max-width: 640px;
 		max-height: 789px;
-		display: flex;		
+		display: flex;
+		margin-right: 70px;
+		flex: 1;
+			
 
 	}
 
 	div.girl-photo img {
 		max-width: 100%;
 		max-height: 100%;
+		object-fit: cover;
+
 
 	}
 
@@ -243,6 +259,7 @@ div.yellow-page-wrapper {
 
 	div.header-logo {
 		text-align: center;
+		margin-left: 0;
 
 	}
 
@@ -266,6 +283,7 @@ div.yellow-page-wrapper {
   		padding: 0.4em 0.6em;
   		font-size: 1.12em;
   		display: block;
+  		margin-right: 0;
   	  		
 }
 
@@ -334,6 +352,10 @@ div.yellow-page-wrapper {
 	div.girl-photo img {
 		width: 100%;
 		height: 100%;
+	}
+
+	div.pos {
+		margin-left: 0;
 	}
 
 
