@@ -177,6 +177,7 @@ div.form-wrapper {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1440px;
+		margin-bottom: 40px;
 
 		
 	}
@@ -209,7 +210,83 @@ div.form-wrapper {
 
 	}
 
+
+/*Black Wrapper*/
+
+	div.black-wrapper {
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.black-wrapper-content {
+		margin: 0 70px;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	div.black-text {
+		color: white;
+		text-align: center;
+	}
+
+
+	.black-text h1 {
+		font-size: 3.62rem;
+		padding-top: 1em;
+		padding-bottom: 1em;
+
+	}
+
+	div.frame-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 2.2em;
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 7rem;
+
+	}
+
+	div.frame {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		max-width: 390px;
+		max-height: 365px;
+
+
+	}
+
+	div.frame img {
+		width: 90%;
+		height: 90%;
+
+
+	}
+
+	div.frame-text {
+		color: white;
+		margin: 0 auto;
+		text-align: center;
+
+	}
+
+	div.frame-text h1 {
+		margin-top: 10px;
+	}
+
 	
+		
+
+
+	
+
 
 	
 
@@ -392,6 +469,7 @@ div.yellow-page-wrapper {
 		flex-direction: column;
 		align-items: center;
 		gap: 2.2em;
+		margin-bottom: 0;
 
 	}
 
