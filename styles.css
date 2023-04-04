@@ -281,8 +281,164 @@ div.form-wrapper {
 		margin-top: 10px;
 	}
 
-	
+
+/*White Page*/
+	div.white-wrapper {
+		background-color: white;
+		width: 100%;
+		height: 100%;
+		position: relative;
+
+
+	}
+
+	div.white-wrapper-content {
 		
+		margin: 0 70px;
+
+
+	}
+
+	div.white-wrapper-frame {
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 100px;
+
+
+	}
+
+	div.white-wrapper h1 {
+		text-align: center;
+		font-size: 3.62rem;
+		padding-top: 2rem;
+		margin-bottom: 3rem;
+		position: relative;
+		z-index: 10;
+
+	}
+
+	div.semi-circle {
+		min-height: 150px;
+		min-width: 300px;
+		background-color: #F3E25B;
+		border-bottom-left-radius: 150px;
+		border-bottom-right-radius: 150px;
+		position: absolute;
+		top: 0;
+		right: 200px;
+		z-index: 1;
+	}
+
+	div.circle {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background-color: #F3E25B;
+		position: absolute;
+		bottom: 20px;
+		left: 300px;
+	}
+
+	div.spot {
+		height: 1rem;
+		width: 1rem;
+		margin-left: 1rem;
+		background-color: #F3E25B;
+		border-radius: 50%;
+		position: absolute;
+		margin-top: 8px;
+
+	}
+
+	div.why {
+		display: block;
+		margin-bottom: 2rem;
+		position: relative;
+		z-index: 10;
+	}
+
+	div.why-container h2 {
+		font-size: 2rem;
+		margin-left: 2.5rem;
+		margin-bottom: 5px;
+
+	}
+
+	div.why-container p {
+		margin-left: 2.5rem;
+	}
+
+	div.no-shipping {
+		margin-bottom: 0;
+	}
+
+
+
+
+	/*FOOTER*/
+	footer {
+		background-color: black;
+		min-height: 100%;
+	}
+
+	footer p {
+		color: white;
+		text-align: center;
+		font-weight: 300;
+		padding-bottom: 2rem;
+
+	}	
+
+	.footer-buttons {
+		display: inline-block;
+		text-align: center;
+		padding: 20px 20px 20px 20px;
+
+	}
+
+	.footer-buttons a {
+		text-decoration: none;
+		color: white;
+		font-weight: 400;
+
+	}
+
+	.footer-buttons li {
+		padding: 10px;
+		list-style: none;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	
@@ -319,7 +475,7 @@ div.form-wrapper {
 
 
 
-@media (max-width: 50em) {
+@media (max-width: 1007px) {
 
 	/*Margins*/
 
@@ -510,15 +666,13 @@ div.yellow-page-wrapper {
 
 
 	/*White page*/
-	div.white-wrapper {
-		background-color: white;
-		width: 100%;
-		position: relative;
-
-	}
 
 	div.white-wrapper-content {
 		margin: 0 20px;
+	}
+
+	div.white-wrapper-frame {
+		padding-bottom: 0;
 	}
 
 	div.white-wrapper h1 {
@@ -549,7 +703,7 @@ div.yellow-page-wrapper {
 		border-radius: 50%;
 		background-color: #F3E25B;
 		position: absolute;
-		top: 466px;
+		bottom: 80px;
 		left: 60px;
 	}
 
