@@ -380,6 +380,22 @@ div.form-wrapper {
 	footer {
 		background-color: black;
 		min-height: 100%;
+
+	}
+
+	div.footer-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 2rem;
+	}
+
+	div.footer-image {
+		margin-left: 70px;
+		text-align: left;
 	}
 
 	footer p {
@@ -391,9 +407,13 @@ div.form-wrapper {
 	}	
 
 	.footer-buttons {
-		display: inline-block;
-		text-align: center;
-		padding: 20px 20px 20px 20px;
+		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		padding: 20px 70px 20px 20px;
+	
+
 
 	}
 
@@ -409,7 +429,25 @@ div.form-wrapper {
 		list-style: none;
 	}
 
+	.footer-buttons a:where(:hover, :focus) {
+		color: #F3E25B;
+	}
 
+
+	ul.social-media {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		margin-bottom: 40px;
+		margin-top: 20px;
+
+	}
+
+	.social-media img {
+		width: 45px;
+		height: 45px;
+	}
 
 
 
@@ -517,6 +555,7 @@ div.yellow-page-wrapper {
   		font-size: 1.12em;
   		display: block;
   		margin-right: 0;
+  		text-align: center;
   	  		
 }
 
@@ -743,6 +782,11 @@ div.yellow-page-wrapper {
 		min-height: 50vh;
 	}
 
+	div.footer-wrap {
+		display: block;
+		padding-top: 0;
+	}
+
 	footer p {
 		color: white;
 		text-align: center;
@@ -753,6 +797,7 @@ div.yellow-page-wrapper {
 
 	.footer-buttons {
 
+		display: block;
 		text-align: center;
 		padding: 20px 20px 20px 20px;
 
@@ -774,8 +819,10 @@ div.yellow-page-wrapper {
 		color: #F3E25B;
 	}
 
-	.footer-image {
+	div.footer-image {
 		padding-top: 2rem;
+		margin-left: 0;
+
 	}
 
 	.footer-image img {
@@ -793,6 +840,11 @@ div.yellow-page-wrapper {
 		margin-bottom: 40px;
 		margin-top: 20px;
 
+	}
+
+	.social-media img {
+		width: 30px;
+		height: 30px;
 	}
 
 	
