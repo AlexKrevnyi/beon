@@ -25,6 +25,8 @@ div.header-logo {
 	margin-left: 70px;
 }
 
+
+
 menu.header-buttons {
 	display: flex;
 	justify-content: flex-end;
@@ -37,19 +39,29 @@ menu.header-buttons {
 menu.header-buttons a {
 	color: black;
 	text-decoration: none;
+	font-size: 1rem;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: white;
 
+}
+
+menu.header-buttons a:where(:hover, :focus ) {
+	color: white;
+	background-color: black;
+	cursor: pointer;
+	transition: all 0.2s ease;	
 }
 
 
 menu.header-buttons li {
-	font-size: 1rem;
 	list-style-type: none;
-	padding: 10px;
-	border: 1px solid black;
-	border-radius: 20px;
 	margin-right: 15px;
 	background-color: white;
 }
+
+
 
 section.first-page {
 	max-width: 640px;
@@ -208,6 +220,36 @@ div.form-wrapper {
 		object-fit: cover;
 
 
+	}
+
+	div.dot1 {
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background-color: white;
+		position: absolute;
+		top: 180px;
+		left: 771px;
+	}
+
+	div.dot2 {
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background-color: white;
+		position: absolute;
+		top: 272px;
+		left: 771px;
+	}
+
+	div.dot3 {
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background-color: white;
+		position: absolute;
+		top: 272px;
+		left: 863px;
 	}
 
 
@@ -513,7 +555,7 @@ div.form-wrapper {
 
 
 
-@media (max-width: 1007px) {
+@media (max-width: 60em) {
 
 	/*Margins*/
 
@@ -552,23 +594,40 @@ div.yellow-page-wrapper {
   		overflow: auto;
   		white-space: nowrap;
   		padding: 0.4em 0.6em;
-  		font-size: 1.12em;
   		display: block;
   		margin-right: 0;
   		text-align: center;
   	  		
 }
 
+	menu.header-buttons a {
+    	font-weight: 400;
+   		font-size: 1.12em;
+    	border: none;
+    	background-color: #F3E25B;
+
+    }
+
 	menu.header-buttons li {
 		font-weight: 400;
 		padding: 1em;
 		display: inline-block;
-		border: none;
 		margin: 0;
 		background-color: #F3E25B;
-
-			
+		
 	}
+
+	
+	menu.header-buttons a:hover {
+		color: black;
+		background-color: #F3E25B;
+		cursor: none;
+		transition: 0.5s ease;
+}
+	
+
+
+
 
 	.first-page h1 {
 		font-size: 2.43em;
