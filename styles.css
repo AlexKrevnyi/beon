@@ -114,6 +114,8 @@ div.form-wrapper {
 		display: flex;
 		flex-direction: column;
 		overflow: auto;
+		position: relative;
+		z-index: 10;
 
 	}
 
@@ -199,7 +201,32 @@ div.form-wrapper {
 		flex-direction: column;
 		margin-left: 70px;
 		flex: 1;
-		
+		position: relative;
+		z-index: 10;
+
+	}
+
+	div.dot11 {
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background-color: white;
+		position: absolute;
+		z-index: 0;
+		bottom: 300px;
+		right: 60px;
+
+	}
+
+	div.dot12 {
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background-color: white;
+		position: absolute;
+		z-index: 0;
+		bottom: 208px;
+		right: 60px;
 
 	}
 
@@ -210,6 +237,8 @@ div.form-wrapper {
 		display: flex;
 		margin-right: 70px;
 		flex: 1;
+		position: relative;
+		z-index: 10;
 			
 
 	}
@@ -218,6 +247,9 @@ div.form-wrapper {
 		max-width: 100%;
 		max-height: 100%;
 		object-fit: cover;
+		position: relative;
+		z-index: 10;
+
 
 
 	}
@@ -228,8 +260,9 @@ div.form-wrapper {
 		border-radius: 50%;
 		background-color: white;
 		position: absolute;
-		top: 180px;
-		left: 771px;
+		z-index: 0;
+		top: 80px;
+		left: 30px;
 	}
 
 	div.dot2 {
@@ -238,8 +271,9 @@ div.form-wrapper {
 		border-radius: 50%;
 		background-color: white;
 		position: absolute;
-		top: 272px;
-		left: 771px;
+		z-index: 0;
+		top: 172px;
+		left: 30px;
 	}
 
 	div.dot3 {
@@ -248,8 +282,31 @@ div.form-wrapper {
 		border-radius: 50%;
 		background-color: white;
 		position: absolute;
-		top: 272px;
-		left: 863px;
+		z-index: 0;
+		top: 80px;
+		left: 122px;
+	}
+
+	div.dot4 {
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background-color: white;
+		position: absolute;
+		z-index: 0;
+	 	bottom: 10px;
+	 	left: 152px;
+	}
+
+	div.dot5 {
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background-color: white;
+		position: absolute;
+		z-index: 0;
+	 	top: 350px;
+	 	right: 10px;
 	}
 
 
@@ -346,6 +403,8 @@ div.form-wrapper {
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 100px;
+		position: relative;
+		z-index: 10;
 
 
 	}
@@ -678,6 +737,10 @@ div.yellow-page-wrapper {
 		max-width: 390px;
 		max-height: 520px;
 		margin: auto;
+	}
+
+	.dot1, .dot2, .dot3, .dot4, .dot5, .dot11, .dot12 {
+		display: none;
 	}
 
 	div.girl-photo img {
