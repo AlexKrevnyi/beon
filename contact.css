@@ -127,7 +127,6 @@ label {
 	font-size: 1.1em;
 	letter-spacing: 2px;
 	font-weight: 700;
-
 }
 
 textarea.input-form {
@@ -170,13 +169,19 @@ div.contact-information {
 
 div.text-info {
 	height: 50%;
+
 }
 
 div.map-info {
 	height: 50%;
+	max-width: 50rem;
 	margin-bottom: 2rem;
-
 }
+
+iframe {
+	width: 100%;
+}
+
 
 ul.contacts-active li {
 	list-style-type: none;
@@ -404,7 +409,81 @@ div.contact-information {
 div.text-info {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	max-width: 50rem;
 }
+
+div.map-info {
+
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+div.text-info {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+
+
+div.footer-wrap {
+	display: block;
+}
+
+div.footer-image {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+
+.footer-buttons {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+
+div.link-footer {
+	display: block;
+}
+
+footer p {
+	color: #94999D;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-weight: 300;
+	padding-top: 1rem;
+}
+
+
+ul.social-media {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 
