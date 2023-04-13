@@ -5,8 +5,10 @@
 }
 
 body {
-	display: block;
 	font-family: 'Oxygen', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 header {
@@ -210,6 +212,7 @@ li.google-address {
 footer {
 	background-color: #202225;
 	min-height: 100%;
+	margin-top: auto;
 
 }
 
