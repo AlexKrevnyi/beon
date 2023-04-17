@@ -113,6 +113,7 @@ div.steps {
 	gap: 40px;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 }
 
 div.step-number {
@@ -131,6 +132,7 @@ span.number {
 	font-weight: 700;
 	font-size: 2.33rem;
 	color: white;
+	z-index: 10;
 }
 
 div.step-text h2 {
@@ -174,12 +176,26 @@ div.step-number-final {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 10;
 }
 
 span.number-final {
 	font-weight: 700;
 	font-size: 2.33rem;
 	color: black;
+}
+
+div.steps::before {
+	content: "";
+	border-left: 4px dotted #F0DA2B;;
+	width: 4px;
+	min-height: 180px;
+	position: absolute;
+	top: 50%;
+	left: 70px;
+	z-index: 1;
+	display: block;
+
 }
 
 
@@ -361,6 +377,7 @@ div.sell-text p {
 div.steps {
 	padding: 20px;
 	gap: 10px;
+	min-height: 100px;
 }
 
 div.step-number {
@@ -398,6 +415,10 @@ div.step-number-final {
 
 span.number-final {
 	font-size: 1.875rem;
+}
+
+div.steps::before {
+	left: 50px;
 }
 
 
