@@ -100,7 +100,7 @@ div.sell-text p {
 div.steps-wrapper {
 	max-width: 1140px;
 	margin-right: auto;
-	margin-left: AUTO;
+	margin-left: auto;
 }
 
 div.steps {
@@ -112,6 +112,7 @@ div.steps {
 	display: flex;
 	gap: 40px;
 	align-items: center;
+	justify-content: space-between;
 }
 
 div.step-number {
@@ -145,6 +146,7 @@ div.step-text {
     word-spacing: 0.25rem;
     color:#2B2F34;
     text-align: left;
+    flex-grow: 1;
 }
 
 div.icon {
@@ -177,7 +179,7 @@ div.step-number-final {
 span.number-final {
 	font-weight: 700;
 	font-size: 2.33rem;
-	color: blakc;
+	color: black;
 }
 
 
@@ -339,6 +341,66 @@ menu.header-buttons a:hover {
 	cursor: none;
 	transition: 0.5s ease;
 }
+
+
+
+/*Main mobile*/
+main {
+	margin: 0 20px;
+}
+
+div.sell-text h1 {
+	font-size: 1.75rem;
+}
+
+div.sell-text p {
+	font-size: 1rem;
+	min-height: 100px;
+}
+
+div.steps {
+	padding: 20px;
+	gap: 10px;
+}
+
+div.step-number {
+	height: 60px;
+	min-width: 60px;
+}
+
+span.number {
+	font-size: 1.875rem;
+}
+
+div.step-text h2 {
+	font-size: 1.125rem;
+}
+
+div.step-text {
+	font-size: 1rem;
+}
+
+div.icon img {
+	max-height: auto;
+	width: 40px;
+}
+
+div.final-step {
+	min-height: 100px;
+	gap: 10px;
+	padding: 20px;
+}
+
+div.step-number-final {
+	height: 60px;
+	min-width: 60px;
+}
+
+span.number-final {
+	font-size: 1.875rem;
+}
+
+
 
 
 /*Footer mobile*/
