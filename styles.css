@@ -48,7 +48,7 @@ menu.header-buttons a {
 
 }
 
-menu.header-buttons a:where(:hover, :focus ) {
+menu.header-buttons a:where(:hover, :focus, :active) {
 	color: white;
 	background-color: black;
 	cursor: pointer;
