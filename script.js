@@ -9,7 +9,7 @@ window.addEventListener("load", function() {
       body: data,
     })
     .then(() => {
-      alert("Success!");
+      alert("Thank you for submitting your information. We will reach out to you shortly with an offer");
     })
   });
 });
