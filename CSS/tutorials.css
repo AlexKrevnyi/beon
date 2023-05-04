@@ -1,0 +1,105 @@
+h1.title {
+	font-size: 2.33rem;
+	margin: 20px 0;
+	text-align: center;
+}
+
+div.blog {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 20px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid #F3E25B;
+    margin: 20px 70px;
+    gap: 2rem;
+   
+}
+
+div.blog:last-of-type {
+	margin-bottom: 50px;
+}
+
+div.tut-photo {
+	max-width: 300px;
+	height: auto;
+}
+
+.tut-photo img:hover {
+	transform: scale(1.02);
+	transition: transform 250ms linear;
+}
+
+div.tut-photo img {
+	width: 100%;
+	height: auto;
+	transition: transform 500ms;
+}
+
+div.tut-text {
+	max-width: 50%;
+	padding: 3rem;
+}
+
+div.tut-text a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+div.tut-text p {
+	font-weight: 300;
+}
+
+div.tut-text h2 {
+	font-size: 1.875rem;
+	line-height: 44px;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	transition: transform 500ms;
+}
+
+.tut-text h2:hover {
+	transform: scale(1.02);
+	transition: transform 250ms linear;
+	text-decoration: underline 5px solid #F3E25B;
+
+}
+
+
+
+/*Mobile Version*/
+
+@media (max-width: 60em) {
+
+h1.title {
+	font-size: 1.75rem;
+}
+
+div.blog {
+	flex-direction: column;
+	margin: 0;
+	gap: 0;
+	padding-bottom: 20px;
+
+}	
+
+div.tut-text {
+	max-width: 100%;
+	padding: 10px 0;
+}
+
+div.tut-text h2 {
+	font-size: 1.33rem;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+}
+
+
