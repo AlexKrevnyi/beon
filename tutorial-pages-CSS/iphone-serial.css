@@ -1,3 +1,4 @@
+
 div.content-wrapper h1 {
 	text-align: center;
 	font-size: 2.33rem;
@@ -37,16 +38,32 @@ div.tut-page-text:last-of-type {
 	margin-bottom: 50px;
 }
 
-div.tut-page-img-sys {
-	max-width: 900px;
-	height: auto;
-	margin: 0 auto;
+div.back-button {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	max-width: 100px;
+	padding: 0.4rem 0.4rem 0.23rem 0.4rem;
+	border: 5px solid #F3E25B;
+	margin: 30px auto;
+	border-radius: 5px;
+	transition: 400ms;
 }
 
-div.tut-page-img-sys img {
-	width: 100%;
-	height: auto;
+
+div.back-button a {
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	font-size: 1.2rem;
 }
+
+div.back-button:where(:hover, :focus, :active) {
+	background-color: #F3E25B;
+	transition: 400ms;
+	cursor: pointer;
+}
+
 
 
 /*Mobile Version*/
